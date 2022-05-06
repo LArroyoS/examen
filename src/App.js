@@ -201,8 +201,8 @@ function App() {
   return (
     <div className="App">
       <main>
-        <Menu>
-      <main>
+        <Menu/>
+      <main/>
       <section>
         {Calculadora()}
       </section>
