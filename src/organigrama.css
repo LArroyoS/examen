@@ -1,0 +1,25 @@
+ul.nivel *{
+    list-style:none;
+    padding: 0px;
+}
+
+li.nodo{
+    float: left;
+}
+
+li.nodo div hr{
+    border: none;
+    border-left: 1px solid black;
+    height: 20px;
+    width: 1px;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+li.nodo div div{
+    display: inline-block;
+    border: 1px black solid;
+    margin: 10px;
+}

@@ -30,7 +30,7 @@ function App() {
       <main class="Menu">
         <Menu menu={menu} setVista={setVista}/>
       </main>
-      <section>
+      <section className="Center">
         {vista}
       </section>
     </div>

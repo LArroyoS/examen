@@ -1,0 +1,19 @@
+table.lista{
+    border-collapse: collapse;
+}
+
+table.lista td{
+    border: 1px solid black;
+    margin: 0;
+    padding: 0;
+}
+
+table.lista td img{
+    width: 150px;
+}
+
+table.lista td.datos{
+    width: 75%;
+    text-align: left;
+    padding-left: 20px;
+}
