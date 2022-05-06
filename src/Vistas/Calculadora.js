@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 function Calculadora(){
     const [values, setValues] = useState({
         value1: "",
