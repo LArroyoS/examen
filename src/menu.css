@@ -1,11 +1,11 @@
 ul.menuDesplegable{
     border: 1px black solid;
-    background: #119596;
+    white-space: nowrap;
 }
 ul.menuDesplegable, ul.menuDesplegable li {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+    display: inline-flex;
+    align-items: center; /*y*/
+    justify-content: center; /*x*/
 }
 table,td {
 	border: 1px solid black;
