@@ -2,25 +2,9 @@ import React, { useState } from "react";
 import './App.css';
 import "./menu.css";
 import logo from "./logo.png";
+import Menu from "./Menu/Menu.js";
 
 function App() {
-  const [desplegar, setDesplegar] = useState({});
-  const [menu, setMenu] = useState([
-    {
-      nombre: "About",
-      opciones: [
-        "¿Quienes somos?",
-        "Organización",
-      ]
-    },
-    {
-      nombre: "Operaciones",
-      opciones: [
-        "Calculadora",
-        "Listado",
-      ]
-    }
-  ]);
   const [organigrama, setOrganigrama] = useState([
     {
       nombre: "Persona1",
@@ -104,10 +88,6 @@ function App() {
       imagen: "./logo.png"
     }
   ]);
-
-  const desplegarOpciones = (index) => {
-    setDesplegar({...desplegar, [index]: !desplegar[index]});
-  }
   const acercaDe = () => {
     return (
       <div>
@@ -220,31 +200,9 @@ function App() {
 
   return (
     <div className="App">
-      <p>{ JSON.stringify(menu) }</p>
-      <p>{ JSON.stringify(organigrama) }</p>
-      <ul class="menuDesplegable">
-        { 
-          menu.map((item, index)=> {
-            return (
-              <li>
-                <a onClick={() => desplegarOpciones(item.nombre)}>{item.nombre}</a>
-                {
-                  item.opciones!=null && desplegar[item.nombre]==true &&
-                  <ul>
-                    {
-                      item.opciones.map((item)=> {
-                        return (
-                          <li>{item}</li>
-                        );
-                      })
-                    }
-                  </ul>
-                }
-              </li>
-            );
-          }) 
-        }
-      </ul>
+      <main>
+        <Menu>
+      <main>
       <section>
         {Calculadora()}
       </section>
