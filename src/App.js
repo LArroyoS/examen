@@ -13,7 +13,7 @@ function App() {
       nombre: "About",
       opciones: [
         {nombre: "¿Quienes somos?", pantalla: <About/>},
-        {nombre: "Organización", pantalla: <Calculadora/>},
+        {nombre: "Organización", pantalla: <Organigrama/>},
       ]
     },
     {
