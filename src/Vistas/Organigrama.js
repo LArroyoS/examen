@@ -75,13 +75,11 @@ function Organigrama(){
             );
         });
     }
-    const organizacion = () => {
-        return (
-            <ul>
+    return (
+        <ul>
             {listar(organigrama)}
-            </ul>
-        );
-    }
+        </ul>
+    );
 }
 
 export default Organigrama;
