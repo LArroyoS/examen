@@ -16,7 +16,6 @@ ul.menuDesplegable a{
     letter-spacing:1px;
 }
 ul.menuDesplegable ul {
-    display:none;
     position:absolute;
     top:100%;
     left:0;
