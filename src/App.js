@@ -3,71 +3,9 @@ import './App.css';
 import "./menu.css";
 import Menu from "./Menu/Menu.js";
 import About from "./Vistas/About";
+import Organigrama from "./Vistas/Organigrama";
 
 function App() {
-  const [organigrama, setOrganigrama] = useState([
-    {
-      nombre: "Persona1",
-      puesto: "Director General",
-      subordinados: [
-        {
-          nombre: "Persona2",
-          puesto: "Direccion",
-          subordinados: [
-            {
-              nombre: "Persona5",
-              puesto: "Depto.",
-              subordinados: [
-                {
-                  nombre: "Persona8",
-                  puesto: "Direccion",
-                  subordinados: null
-                },
-              ]
-            },
-          ]
-        },
-        {
-          nombre: "Persona3",
-          puesto: "Direccion",
-          subordinados: [
-            {
-              nombre: "Persona6",
-              puesto: "Depto.",
-              subordinados: [
-                {
-                  nombre: "Persona9",
-                  puesto: "Direccion",
-                  subordinados: null
-                },
-                {
-                  nombre: "Persona9",
-                  puesto: "Direccion",
-                  subordinados: null
-                },
-              ]
-            },
-            {
-              nombre: "Persona7",
-              puesto: "Depto",
-              subordinados: [
-                {
-                  nombre: "Persona10",
-                  puesto: "Direccion",
-                  subordinados: null
-                },
-              ]
-            },
-          ]
-        },
-        {
-          nombre: "Persona4",
-          puesto: "Direccion",
-          subordinados: null
-        },
-      ]
-    }
-  ]);
   const [listaProductos, setListaProductos] = useState([
     {
       nombre: "Producto1",
@@ -88,24 +26,6 @@ function App() {
       imagen: "./logo.png"
     }
   ]);
-  const listar = (lista) => {
-    return lista.map((item, index) => {
-      return (
-        <li>
-          <h4> { item.nombre } </h4>
-          <h5> { item.puesto }</h5>
-          { item.subordinados!=null && listar(item.subordinados)}
-        </li>
-      );
-    });
-  }
-  const organizacion = () => {
-    return (
-      <ul>
-        {listar(organigrama)}
-      </ul>
-    );
-  }
   const ListaProd = () => {
     return (
       <table>
@@ -196,6 +116,7 @@ function App() {
       </main>
       <section>
         <About/>
+        <Organigrama/>
         {Calculadora()}
       </section>
     </div>
