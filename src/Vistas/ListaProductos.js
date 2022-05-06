@@ -28,7 +28,7 @@ function ListaProductos(){
                     return (
                     <tr>
                         <td>
-                            <img src={require(item.imagen)} alt={item.nombre}/>
+                            <img src={require("${item.imagen}")} alt={item.nombre}/>
                         </td>
                         <td>
                             <h4>{item.nombre}</h4>
