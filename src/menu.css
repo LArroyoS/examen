@@ -6,7 +6,7 @@ ul.menuDesplegable, ul.menuDesplegable li {
     display: inline-flex;
     justify-content: space-around; /*x*/
 }
-ul.menuDesplegable, ul.menuDesplegable li ul li {
+ul.menuDesplegable, ul.menuDesplegable li ul {
     display: block;
 }
 td {

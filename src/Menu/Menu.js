@@ -1,24 +1,8 @@
 import { useState } from "react";
 import "../menu.css";
 
-function Menu (){
+function Menu ({menu}){
     const [desplegar, setDesplegar] = useState({});
-    const [menu, setMenu] = useState([
-      {
-        nombre: "About",
-        opciones: [
-          "¿Quienes somos?",
-          "Organización",
-        ]
-      },
-      {
-        nombre: "Operaciones",
-        opciones: [
-          "Calculadora",
-          "Listado",
-        ]
-      }
-    ]);
     const desplegarOpciones = (index) => {
         setDesplegar({...desplegar, [index]: !desplegar[index]});
     }
@@ -28,14 +12,14 @@ function Menu (){
           menu.map((item, index)=> {
             return (
               <li>
-                <a onClick={() => desplegarOpciones(item.nombre)}>{item.nombre}</a>
+                <a onClick={() => desplegarOpciones(item1.nombre)}>{item.nombre}</a>
                 {
-                  item.opciones!=null && desplegar[item.nombre]==true &&
+                  item.opciones!=null && desplegar[item1.nombre]==true &&
                   <ul>
                     {
-                      item.opciones.map((item)=> {
+                      item.opciones.map((item2)=> {
                         return (
-                          <li>{item}</li>
+                          <a onClick={() => setVista(item2.pantalla)}>{item2.nombre}</li>
                         );
                       })
                     }

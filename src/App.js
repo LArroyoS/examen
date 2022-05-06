@@ -8,11 +8,27 @@ import Calculadora from "./Vistas/Calculadora";
 import ListaProductos from "./Vistas/ListaProductos";
 
 function App() {
-
+  const [menu, setMenu] = useState([
+    {
+      nombre: "About",
+      opciones: [
+        {nombre: "¿Quienes somos?", pantalla: About},
+        {nombre: "Organización", pantalla: Calculadora},
+      ]
+    },
+    {
+      nombre: "Operaciones",
+      opciones: [
+        {nombre: "Calculadora", pantalla: Calculadora},
+        {nombre: "Listado de Productos", pantalla: ListaProductos},
+      ]
+    }
+  ]);
+  const [vista, setVista ] =  useState(<></>)
   return (
     <div className="App">
       <main>
-        <Menu/>
+        <Menu menu={menu} setVista={setVista}/>
       </main>
       <section>
         <About/>
