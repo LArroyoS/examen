@@ -12,15 +12,15 @@ function App() {
     {
       nombre: "About",
       opciones: [
-        {nombre: "¿Quienes somos?", pantalla: About},
-        {nombre: "Organización", pantalla: Calculadora},
+        {nombre: "¿Quienes somos?", pantalla: <About/>},
+        {nombre: "Organización", pantalla: <Calculadora/>},
       ]
     },
     {
       nombre: "Operaciones",
       opciones: [
-        {nombre: "Calculadora", pantalla: Calculadora},
-        {nombre: "Listado de Productos", pantalla: ListaProductos},
+        {nombre: "Calculadora", pantalla: <Calculadora/>},
+        {nombre: "Listado de Productos", pantalla: <ListaProductos/>},
       ]
     }
   ]);
@@ -31,10 +31,7 @@ function App() {
         <Menu menu={menu} setVista={setVista}/>
       </main>
       <section>
-        <About/>
-        <Organigrama/>
-        <Calculadora/>
-        <ListaProductos/>
+        {vista}
       </section>
     </div>
   );
