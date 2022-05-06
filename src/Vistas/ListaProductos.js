@@ -6,19 +6,19 @@ function ListaProductos(){
             nombre: "Producto1",
             descripcion: "Descripcion",
             precio: "0.00",
-            imagen: "./logo.png"
+            imagen: "../logo.png"
         },
         {
             nombre: "Producto2",
             descripcion: "Descripcion",
             precio: "0.00",
-            imagen: "./logo.png"
+            imagen: "../logo.png"
         },
         {
             nombre: "Producto2",
             descripcion: "Descripcion",
             precio: "0.00",
-            imagen: "./logo.png"
+            imagen: "../logo.png"
         }
     ]);
     return (
