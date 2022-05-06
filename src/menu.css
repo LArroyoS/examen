@@ -1,14 +1,24 @@
 ul.menuDesplegable{
-    border: 1px black solid;
-    white-space: nowrap;
+    list-style:none;
+    margin:0;
+    padding:0;
 }
-ul.menuDesplegable, ul.menuDesplegable li {
-    display: inline-flex;
-    justify-content: space-around; /*x*/
+ul.menuDesplegable li{
+    background-color:#119596;
+    position:relative;
+    float:left;
+    margin:0;
+    padding:0;
 }
-ul.menuDesplegable, ul.menuDesplegable li ul {
-    display: block;
+ul.menuDesplegable a{
+    display:block;
+    text-decoration:none;
+    letter-spacing:1px;
 }
-td {
-	border: 1px solid black;
+ul.menuDesplegable ul {
+    display:none;
+    position:absolute;
+    top:100%;
+    left:0;
+    padding:0;
 }
