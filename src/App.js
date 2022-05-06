@@ -171,6 +171,8 @@ function App() {
       setOperacion(target.value);
     }
     const onClick = () =>{
+      var v1 = values.value1;
+      var v2 = values.value2;
       if(!isNaN(v1) && !isNaN(v2)){
         v1 = Number(v1);
         v2 = Number(v2);
