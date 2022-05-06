@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import './App.css';
 import "./menu.css";
-import logo from "./logo.png";
 import Menu from "./Menu/Menu.js";
+import About from "./Vistas/About";
 
 function App() {
   const [organigrama, setOrganigrama] = useState([
@@ -88,15 +88,6 @@ function App() {
       imagen: "./logo.png"
     }
   ]);
-  const acercaDe = () => {
-    return (
-      <div>
-        <h1>About</h1>
-        <p>Somo una empresa experta innovacion tecnologica.</p>
-        <img src={logo} alt="logo"/>
-      </div>
-    )
-  }
   const listar = (lista) => {
     return lista.map((item, index) => {
       return (
@@ -204,6 +195,7 @@ function App() {
         <Menu/>
       </main>
       <section>
+        <About/>
         {Calculadora()}
       </section>
     </div>
