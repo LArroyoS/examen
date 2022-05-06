@@ -4,7 +4,7 @@ import "../menu.css";
 function Menu ({menu,setVista}){
     const [desplegar, setDesplegar] = useState({});
     const desplegarOpciones = (index) => {
-        setDesplegar({...desplegar, [index]: !desplegar[index]});
+        setDesplegar({[index]: !desplegar[index]});
     }
     return (
         <ul class="menuDesplegable">
