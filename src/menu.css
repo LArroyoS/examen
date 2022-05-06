@@ -1,5 +1,6 @@
 ul.menuDesplegable{
     border: 1px black solid;
+    background: #119596;
 }
 ul.menuDesplegable, ul.menuDesplegable li {
     list-style: none;

@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "../menu.css";
 
 function Menu (){
     const [desplegar, setDesplegar] = useState({});
