@@ -19,7 +19,7 @@ function Menu ({menu}){
                     {
                       item.opciones.map((item2)=> {
                         return (
-                          <a onClick={() => setVista(item2.pantalla)}>{item2.nombre}</li>
+                          <a onClick={() => setVista(item2.pantalla)}>{item2.nombre}</a>
                         );
                       })
                     }
