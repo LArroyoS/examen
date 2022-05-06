@@ -202,7 +202,7 @@ function App() {
     <div className="App">
       <main>
         <Menu/>
-      <main/>
+      </main>
       <section>
         {Calculadora()}
       </section>
