@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "../menu.css";
 
-function Menu ({menu}){
+function Menu ({menu,setVista}){
     const [desplegar, setDesplegar] = useState({});
     const desplegarOpciones = (index) => {
         setDesplegar({...desplegar, [index]: !desplegar[index]});
@@ -17,7 +17,7 @@ function Menu ({menu}){
                   item1.opciones!=null && desplegar[item1.nombre]==true &&
                   <ul>
                     {
-                      item.opciones.map((item2)=> {
+                      item1.opciones.map((item2)=> {
                         return (
                           <a onClick={() => setVista(item2.pantalla)}>{item2.nombre}</a>
                         );
