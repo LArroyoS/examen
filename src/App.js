@@ -27,7 +27,7 @@ function App() {
   const [vista, setVista ] =  useState(<></>)
   return (
     <div className="App">
-      <main>
+      <main class="Menu">
         <Menu menu={menu} setVista={setVista}/>
       </main>
       <section>
