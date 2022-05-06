@@ -6,19 +6,19 @@ function ListaProductos(){
             nombre: "Producto1",
             descripcion: "Descripcion",
             precio: "0.00",
-            imagen: "../logo.png"
+            imagen: require("../logo.png")
         },
         {
             nombre: "Producto2",
             descripcion: "Descripcion",
             precio: "0.00",
-            imagen: "../logo.png"
+            imagen: require("../logo.png")
         },
         {
             nombre: "Producto2",
             descripcion: "Descripcion",
             precio: "0.00",
-            imagen: "../logo.png"
+            imagen: require("../logo.png")
         }
     ]);
     return (
@@ -28,7 +28,7 @@ function ListaProductos(){
                     return (
                     <tr>
                         <td>
-                            <img src={require("${item.imagen}")} alt={item.nombre}/>
+                            <img src={item.imagen} alt={item.nombre}/>
                         </td>
                         <td>
                             <h4>{item.nombre}</h4>
