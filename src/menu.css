@@ -9,12 +9,13 @@ ul.menuDesplegable li{
     margin:0;
     padding:0;
 }
-ul.menuDesplegable a{
+ul.menuDesplegable a, ul.menuDesplegable ul li{
     display:block;
     text-decoration:none;
     letter-spacing:1px;
 }
 ul.menuDesplegable ul {
+    list-style:none;
     position:absolute;
     top:100%;
     left:0;
