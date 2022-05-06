@@ -4,9 +4,11 @@ ul.menuDesplegable{
 }
 ul.menuDesplegable, ul.menuDesplegable li {
     display: inline-flex;
-    align-items: center; /*y*/
-    justify-content: center; /*x*/
+    justify-content: space-around; /*x*/
 }
-table,td {
+ul.menuDesplegable, ul.menuDesplegable li ul li {
+    display: block;
+}
+td {
 	border: 1px solid black;
 }
