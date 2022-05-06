@@ -9,12 +9,12 @@ function Menu ({menu}){
     return (
         <ul class="menuDesplegable">
         { 
-          menu.map((item, index)=> {
+          menu.map((item1, index)=> {
             return (
               <li>
-                <a onClick={() => desplegarOpciones(item1.nombre)}>{item.nombre}</a>
+                <a onClick={() => desplegarOpciones(item1.nombre)}>{item1.nombre}</a>
                 {
-                  item.opciones!=null && desplegar[item1.nombre]==true &&
+                  item1.opciones!=null && desplegar[item1.nombre]==true &&
                   <ul>
                     {
                       item.opciones.map((item2)=> {
